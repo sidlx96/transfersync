@@ -1,0 +1,30 @@
+<div class="container mt-3">
+    <h2>Transfer Sync</h2>
+    <p>Use this tool to communicate with your inhand devices</p>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Type your Text</h4>
+            <div class="row col-md-3 flex-start" style="margin-left:0%;margin-bottom:2%;">
+                <input type="text" name='searchKey' id="searchKey" class="card-text" [(ngModel)]="searchKey">
+    
+            </div>
+            <button class="btn btn-primary card-link" (click)="AddItem()">Add </button>
+            <button class="btn btn-secondary card-link" (click)="onClear()" >Clear </button>  
+    
+    
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Recent Text</h4>
+            
+            <button class="btn btn-primary card-link" (click)="GetItem()">Fetch </button>
+            
+            <div style="margin-top: 2%;">
+                <label class="card-text" style="font-weight: bold;margin-bottom: 2%;">Latest Data</label>
+                <p class="card-text"> {{latestData}}</p>
+            </div>
+    
+        </div>
+  </div>
